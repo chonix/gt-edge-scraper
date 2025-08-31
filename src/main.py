@@ -9,7 +9,7 @@ def main():
     timestamp = datetime.now().strftime("%d_%m_%Y")
     
     # Read driver names from a file
-    driver_file = Path("config\\driver_list.txt")
+    driver_file = Path("config") / "driver_list.txt"
     driver_list = [line.strip() for line in driver_file.read_text(encoding="utf-8").splitlines() if line.strip()]
 
     # Define output directory
